@@ -22,4 +22,4 @@ jobs:
       - name: Build uboot-ipq40xx
         run: |
 
-          make -j$(nproc)
+          make 
