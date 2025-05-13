@@ -21,6 +21,5 @@ jobs:
 
       - name: Build uboot-ipq40xx
         run: |
-          make distclean
           make ac58u_config
           make -j$(nproc)
