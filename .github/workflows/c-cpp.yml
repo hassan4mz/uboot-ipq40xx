@@ -19,18 +19,18 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y build-essential gcc-arm-linux-gnueabi bison flex libssl-dev
 
+      - name: Clone uboot and SDK repos
+        run: |
           git clone https://github.com/gl-inet/uboot-ipq40xx.git
           git clone https://github.com/cubieb/openwrt-sdk-ipq806x.git
 
       - name: Build uboot-ipq40xx
         run: |
-
-          make 
-
+          cd uboot-ipq40xx
+          make
 
       - name: Upload binaries
-        uses:  actions/checkout@v3
+        uses: actions/upload-artifact@v4
         with:
-         name: ubootipq40XX
-         path: "bin/*"
-
+          name: ubootipq40xx
+          path: uboot-ipq40xx/bin/*
