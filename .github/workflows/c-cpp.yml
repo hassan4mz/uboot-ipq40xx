@@ -31,6 +31,6 @@ jobs:
       - name: Upload binaries
         uses:  actions/checkout@v3
         with:
-         name: u-boot
+         name: ubootipq40XX
          path: "bin/*"
 
