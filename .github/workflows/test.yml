@@ -9,7 +9,7 @@ on:
         description: 'SSH connection to Actions'
         required: false
         type: choice
-        default: 'true'
+        default: 'false'
         options:
         - 'true'
         - 'false'
