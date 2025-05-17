@@ -26,3 +26,11 @@ jobs:
         run: |
 
           make 
+
+
+      - name: Upload binaries
+        uses: actions/upload-artifact@v3
+        with:
+         name: u-boot
+         path: "bin/"
+
