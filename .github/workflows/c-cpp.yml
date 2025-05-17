@@ -26,7 +26,7 @@ jobs:
 
       - name: Build uboot-ipq40xx
         run: |
-          cd uboot-ipq40xx
+         
           make
 
       - name: Upload binaries
